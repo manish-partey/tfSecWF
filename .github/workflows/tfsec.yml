@@ -30,6 +30,11 @@ jobs:
         with:
           sarif_file: tfsec.sarif         
 
+      - name: tf tfsecComment
+        uses: aquasecurity/tfsec-pr-commenter-action@v1.2.0
+        with:
+          github_token: ${{ github.token }}
+          
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
