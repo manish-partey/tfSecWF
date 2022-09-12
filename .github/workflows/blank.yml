@@ -1,4 +1,4 @@
-name: go-github-pr-commenter release
+name: MANISH
 on:
   push:
     branches: [ "main" ]
